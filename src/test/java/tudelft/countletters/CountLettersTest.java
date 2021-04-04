@@ -7,15 +7,21 @@ public class CountLettersTest {
 
     @Test
     public void multipleMatchingWords() {
-        int words = new CountLetters().count("cats|dogs");
+        int words = new CountLetters().count("cats|dogr");
         Assertions.assertEquals(2, words);
     }
 
-    @Test
-    public void lastWordDoesNotMatch() {
-        int words = new CountLetters().count("cats|dog");
-        Assertions.assertEquals(1, words);
-    }
+   // @Test
+   // public void multipleMatchingWordsR() {
+    //    int words = new CountLetters().count("catr|dogr");
+     //   Assertions.assertEquals(2, words);
+   // }
+
+   // @Test
+   // public void lastWordDoesNotMatch() {
+   //     int words = new CountLetters().count("cats|dog");
+   //     Assertions.assertEquals(1, words);
+   // }
 
     @Test
     public void noWordMatch() {
@@ -23,4 +29,9 @@ public class CountLettersTest {
         Assertions.assertEquals(0, words);
     }
 
+    //@Test
+    //public void lastWordDoesNotMatchR() {
+    //    int words = new CountLetters().count("catr|dog");
+   //     Assertions.assertEquals(1, words);
+  //  }
 }

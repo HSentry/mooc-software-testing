@@ -5,6 +5,12 @@ import java.util.List;
 
 public class InvoiceFilter {
 
+    private InvoiceDao dao;
+
+    public InvoiceFilter(InvoiceDao dao){
+        this.dao=dao;
+    }
+
     public List<Invoice> filter() {
 
         InvoiceDao invoiceDao = new InvoiceDao();
